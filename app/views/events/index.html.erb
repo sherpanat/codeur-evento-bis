@@ -1,2 +1,13 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <h1 class="text-center">Evénements à venir</h1>
+
+  <% @events.each do |event| %>
+    <div class="bg-grey-hover">
+      <p class="fs-5">
+        <span class="<%= event.color %>"><%= event.name %></span>
+        , prévu <%= I18n.l(event.date, format: :official).downcase %>, crée par <%= event.email %>
+      </p>
+      <p class="fs-6"><%= event.description %></p>
+    </div>
+  <% end %>
+</div>
