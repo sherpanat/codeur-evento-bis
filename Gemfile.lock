@@ -50,6 +50,10 @@ GEM
       globalid (>= 0.3.6)
     activemodel (6.0.4.4)
       activesupport (= 6.0.4.4)
+    activemodel-serializers-xml (1.0.2)
+      activemodel (> 5.x)
+      activesupport (> 5.x)
+      builder (~> 3.1)
     activerecord (6.0.4.4)
       activemodel (= 6.0.4.4)
       activesupport (= 6.0.4.4)
@@ -90,6 +94,12 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
+    draper (3.1.0)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
+      activemodel-serializers-xml (>= 1.0)
+      activesupport (>= 5.0)
+      request_store (>= 1.0)
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.15.5)
@@ -170,6 +180,8 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     regexp_parser (2.2.0)
+    request_store (1.5.0)
+      rack (>= 1.4)
     rexml (3.2.5)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
@@ -237,6 +249,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   dotenv-rails
+  draper
   faker!
   font-awesome-sass
   jbuilder (~> 2.7)
