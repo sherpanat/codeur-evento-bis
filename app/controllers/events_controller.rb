@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
-  def home
+  def index
+    @events = Event.where('date > ?', 11.days.ago).decorate
   end
 end
